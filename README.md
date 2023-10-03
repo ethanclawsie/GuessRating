@@ -8,6 +8,7 @@ A fun web-based game where you guess which of two movies has the higher rating. 
 - Click on movie cards to make your selection.
 - Immediate feedback on your guess.
 - Prevents selecting two movies with the same rating.
+- Keeps track of correct and missed guesses.
 
 ## Getting Started
 
@@ -22,6 +23,7 @@ A fun web-based game where you guess which of two movies has the higher rating. 
 - Click on one of the two movie cards to make your guess on which movie has the higher rating.
 - See the result of your guess displayed below the movie cards.
 - Click anywhere on the movie cards for a new round with two different movies.
+- Track your correct and missed guesses at the bottom of the screen.
 
 ## Customization
 
