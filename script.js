@@ -1,4 +1,6 @@
 let movies = [];
+let correctGuesses = 0;
+let missedGuesses = 0;
 
 async function loadMovies() {
   try {
@@ -54,11 +56,19 @@ function makeGuess(selectedMovie) {
     (selectedMovie === 2 && movie2Rating > movie1Rating)
   ) {
     resultText = "Correct!";
+    correctGuesses++;
   } else {
     resultText = "Wrong. Try again!";
+    missedGuesses++;
   }
 
   document.getElementById("result").innerText = resultText;
+  document.getElementById(
+    "correct-count"
+  ).innerText = `Correct: ${correctGuesses}`;
+  document.getElementById(
+    "missed-count"
+  ).innerText = `Missed: ${missedGuesses}`;
   loadMovies();
 }
 

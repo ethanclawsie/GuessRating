@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Movie Rating Game</title>
+    <title>Movie Rating Guessing Game</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Movie Rating Game</h1>
+      <h1>Movie Rating Guessing Game</h1>
       <div class="game-container">
         <div class="movie-card" id="movie1" onclick="makeGuess(1)"></div>
         <div class="movie-card" id="movie2" onclick="makeGuess(2)"></div>
       </div>
       <p id="result"></p>
+      <div class="guess-count">
+        <p id="correct-count">Correct: 0</p>
+        <p id="missed-count">Missed: 0</p>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
